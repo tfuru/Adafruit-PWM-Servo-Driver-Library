@@ -1,7 +1,6 @@
 This is a library for our Adafruit 16-channel PWM & Servo driver
 
-Adafruit-PWM-Servo-Driver-Library を ATtiny85 対応に   
-https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library
+ATtiny85 対応の [Adafruit-PWM-Servo-Driver-Library](https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library)
 
 ##Library  
 TinyWireM  
@@ -9,6 +8,3 @@ TinyWireM
 ##ATtiny85
 0 SDA  
 2 SCL  
-
- 
-
