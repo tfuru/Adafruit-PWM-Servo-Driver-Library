@@ -1,3 +1,4 @@
+
 /*************************************************** 
   This is an example for our Adafruit 16-channel PWM & Servo driver
   PWM test - this will drive 16 PWMs in a 'wave'
@@ -16,7 +17,9 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
-#include <Wire.h>
+#include <TinyWireM.h>
+#include <USI_TWI_Master.h>
+
 #include <Adafruit_PWMServoDriver.h>
 
 // called this way, it uses the default address 0x40
@@ -30,13 +33,6 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 #endif
 
 void setup() {
-#ifdef ESP8266
-  Wire.pins(2, 14);   // ESP8266 can use any two pins, such as SDA to #2 and SCL to #14
-#endif
-  
-  Serial.begin(9600);
-  Serial.println("16 channel PWM test!");
-
   pwm.begin();
   pwm.setPWMFreq(1600);  // This is the maximum PWM frequency
 

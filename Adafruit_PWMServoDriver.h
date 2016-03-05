@@ -15,6 +15,10 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
+#include <TinyWireM.h>
+#include <USI_TWI_Master.h>
+#define WIRE TinyWireM
+
 #ifndef _ADAFRUIT_PWMServoDriver_H
 #define _ADAFRUIT_PWMServoDriver_H
 
